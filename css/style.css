@@ -11,6 +11,10 @@
     --background-blue: #0000ff;
 }
 
+html body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -85,29 +89,30 @@ img {
 }
 
 /* header section start  */
-html body {
-    font-family: 'Times New Roman', Times, serif;
-}
 
-header .navbar {
-    background-color: #000;
+
+header{
+    background-color:var(--background-back--);
     color: var(--text-white--);
-    margin: 0 15px;
-    width: 100%;
 }
 
-header .navbar h2 a {
-    font-size: 2rem;
+header .logo{
+    font-size: 33px;
+    font-weight: 600;
 }
 
 header .navbar nav ul li a {
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 0 15px;
-    padding: 15px 0;
+    margin: 15px 15px;
+    padding: 15px 10px;
 }
 
 header .navbar nav ul li:hover a {
+    color: var(--background-blue);
+}
+
+.navbar ul li .active{
     color: var(--background-blue);
 }
 
@@ -131,7 +136,12 @@ header .navbar ul li:hover a {
     color: var(--text-white--);
 }
 
+
+
+
 header .sub-bar {
+    background: var(--text-white--);
+    width: 100%;
     position: relative;
     color: var(--text-gray--);
     margin: 15px;
