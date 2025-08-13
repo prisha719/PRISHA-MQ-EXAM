@@ -93,6 +93,7 @@ header .navbar {
     background-color: #000;
     color: var(--text-white--);
     margin: 0 15px;
+    width: 100%;
 }
 
 header .navbar h2 a {
@@ -255,12 +256,28 @@ header .sub-bar ul li a .fa-solid {
 
 
 /* products section end  */
-
-/* footer section start */
-.footer {
-    background-color: #000;
-    color: #fff;
-    padding: 30px;
+/*footer section starts*/
+footer {
+    background: var(--background-back--);
+    color: var(--text-white--);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
 }
 
-/* footer section end */
+footer .social a {
+    margin-left: 10px;
+    color: var(--text-white--);
+}
+
+footer .social a i {
+    color: var(--text-white--);
+}
+
+footer .social a i:hover {
+    color: var(--text-gray--);
+    transition: all 0.3s ease-in-out;
+}
+
+/*footer section ends*/
